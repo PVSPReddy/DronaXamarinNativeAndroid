@@ -1,0 +1,3 @@
+﻿android:gravity="center_vertical"
+    this above line aligns the text inside the View
+

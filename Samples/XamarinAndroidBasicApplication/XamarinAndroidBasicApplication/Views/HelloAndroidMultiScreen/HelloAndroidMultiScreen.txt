@@ -1,0 +1,12 @@
+﻿In this example we are creating a page that converts the respective words in to 
+respective numbers based on basic mobile key-pad and also shows previous translated histories.
+
+Here we also learn the way to navigate to different pages unlike the previous example in which 
+we only stay in single page.
+
+Here we also learns how to get string values form Strings.xml which lies in
+Resources/Values/Strings.xml folders. for Page Title we are giving the name from this
+Strings.xml page as "Translation History".
+
+This the back end code lies in main activity, HelloAndroidMultiScreen folder, we are using the PhoneWordTranslatorSingleScreeen.cs
+from HelloAndroidSingleScreen folder and UI part is designed in the layouts folder named as  HelloAndroidMultiScreenAXML.

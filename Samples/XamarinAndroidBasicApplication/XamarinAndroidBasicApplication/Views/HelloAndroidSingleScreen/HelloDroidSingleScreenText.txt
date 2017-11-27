@@ -1,0 +1,4 @@
+﻿In this example we are creating a page that converts the respective words in to 
+respective numbers based on basic mobile key-pad.
+This the back end code lies in main activity, HelloAndroidSingleScreen folder
+and UI part is designed in the layouts folder named as  HelloAndroidSingleScreenAXML.
