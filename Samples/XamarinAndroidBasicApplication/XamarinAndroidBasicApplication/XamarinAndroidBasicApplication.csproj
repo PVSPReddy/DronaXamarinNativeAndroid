@@ -58,6 +58,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\HelloAndroidSingleScreen\PhonewordTranslatorSingleScreen.cs" />
     <Compile Include="Views\HelloAndroidMultiScreen\TranslationHistoryActivity.cs" />
+    <Compile Include="Views\MainMenuActivity.cs" />
+    <Compile Include="Views\HelloAndroidSingleScreen\BasicSingleScreenActivity.cs" />
+    <Compile Include="Views\HelloAndroidMultiScreen\BasicMultiScreenActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\GreenColorActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\VioletColorActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\IndigoColorActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\BlueColorActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\YellowColorActivity.cs" />
+    <Compile Include="Views\SingleAXMLWithMultipleActivities\OrangeColorActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,17 +82,26 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\layout\HelloDroidSingleScreenAXML.axml" />
     <AndroidResource Include="Resources\layout\HelloDroidMultiScreenAXML.axml" />
+    <AndroidResource Include="Resources\layout\MainMenuActivityAXML.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\backWhite.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\backWhite.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\backWhite.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\backWhite.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\backWhite.png" />
+    <AndroidResource Include="Resources\layout\SingleAXMLForMultiActivities.axml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\mipmap-hdpi\" />
-    <Folder Include="Resources\mipmap-mdpi\" />
-    <Folder Include="Resources\mipmap-xhdpi\" />
-    <Folder Include="Resources\mipmap-xxhdpi\" />
-    <Folder Include="Resources\mipmap-xxxhdpi\" />
     <Folder Include="Resources\drawable\" />
     <Folder Include="Views\" />
     <Folder Include="Views\HelloAndroidSingleScreen\" />
     <Folder Include="Views\HelloAndroidMultiScreen\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Views\SingleAXMLWithMultipleActivities\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
