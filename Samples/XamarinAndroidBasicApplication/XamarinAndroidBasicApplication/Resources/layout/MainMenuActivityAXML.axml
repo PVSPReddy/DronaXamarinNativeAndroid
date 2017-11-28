@@ -19,19 +19,21 @@
             android:layout_height="match_parent"
             android:id="@+id/linearLayout1">
             <TextView
-                android:text="Large Text"
+                android:text="Single Page Screen"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:id="@+id/textView1" />
+                android:layout_margin="10dp"
+                android:id="@+id/MenuBasicSinglePageScreen" />
             <TextView
-                android:text="Large Text"
+                android:text="Multi Page Screen"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:id="@+id/textView2" />
+                android:layout_margin="10dp"
+                android:id="@+id/MenuBasicMultiPageScreen" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

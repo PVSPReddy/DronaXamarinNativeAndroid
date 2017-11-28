@@ -1,3 +1,5 @@
 ﻿android:gravity="center_vertical"
     this above line aligns the text inside the View
 
+px : value isconsidered as percentage values of the existing parents
+dp : is a absolute value to get the sizes of the views

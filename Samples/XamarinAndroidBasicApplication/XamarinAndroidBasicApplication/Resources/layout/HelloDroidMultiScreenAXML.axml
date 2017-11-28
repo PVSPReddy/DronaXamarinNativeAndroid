@@ -3,6 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/backwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/MultiScreenImageBack" />
     <TextView
         android:text="Enter a Phone Word"
         android:textAppearance="?android:attr/textAppearanceLarge"
