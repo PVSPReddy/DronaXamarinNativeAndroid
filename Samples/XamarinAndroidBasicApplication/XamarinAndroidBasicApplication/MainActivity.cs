@@ -9,7 +9,7 @@ namespace XamarinAndroidBasicApplication
     [Activity(Label = "XamarinAndroidBasicApplication", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        static readonly List<string> phoneNumbers = new List<string>();
+        //static readonly List<string> phoneNumbers = new List<string>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -44,8 +44,8 @@ namespace XamarinAndroidBasicApplication
             };
             */
 
-
-            // Set our view from the "HelloDroidSingleScreenAXML" layout resource
+            /*
+            // Set our view from the "HelloDroidMultiScreenAXML" layout resource
             SetContentView(Resource.Layout.HelloDroidMultiScreenAXML);
             // Get our UI controls from the loaded layout
             EditText phoneNumberText = FindViewById<EditText>(Resource.Id.MultiScreenPhoneNumberText);
@@ -75,7 +75,11 @@ namespace XamarinAndroidBasicApplication
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
             };
+            */
 
+            //this code is to call menu page of the application
+            var intent = new Intent(this, typeof(MainMenuActivity));
+            StartActivity(intent);
 
 
         }
