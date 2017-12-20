@@ -22,11 +22,15 @@ namespace XamarinAndroidBasicApplication
 
             // Create your application here
             SetContentView(Resource.Layout.MainMenuActivityAXML);
+
             TextView singlePageScreen = FindViewById<TextView>(Resource.Id.MenuBasicSinglePageScreen);
             singlePageScreen.Click += SinglePageButtonClicked;
 
             TextView multiPageScreen = FindViewById<TextView>(Resource.Id.MenuBasicMultiPageScreen);
             multiPageScreen.Click += MultiPageButtonClicked;
+
+            TextView SingleAXMLMultiScreens = FindViewById<TextView>(Resource.Id.SingleAXMLFromMultipleActivites);
+            SingleAXMLMultiScreens.Click += SingleAXMLMultiScreensClicked;
         }
 
         #region for single page Button Click event
@@ -59,5 +63,26 @@ namespace XamarinAndroidBasicApplication
             }
         }
         #endregion
+
+        #region for Single AXML for Multi Screen Button Click event
+        void SingleAXMLMultiScreensClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var SingleAXMLMultiScreenIntent = new Intent(this, typeof(VioletColorActivity));
+                StartActivity(SingleAXMLMultiScreenIntent);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.Message;
+            }
+        }
+        #endregion
+
+
+
+
+
+
     }
 }

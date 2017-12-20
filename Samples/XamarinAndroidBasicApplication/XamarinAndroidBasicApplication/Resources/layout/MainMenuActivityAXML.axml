@@ -34,6 +34,14 @@
                 android:gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:id="@+id/MenuBasicMultiPageScreen" />
+            <TextView
+                android:text="Single AXML for multiple Activites"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/SingleAXMLFromMultipleActivites" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

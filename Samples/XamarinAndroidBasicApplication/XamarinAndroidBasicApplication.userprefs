@@ -1,13 +1,5 @@
 ﻿<Properties StartupConfiguration="{7BD150C3-51D2-4F3C-92E7-0D983ED039CE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinAndroidBasicApplication/MainActivity.cs">
-    <Files>
-      <File FileName="XamarinAndroidBasicApplication/Views/Preface.txt" Line="4" Column="1" />
-      <File FileName="XamarinAndroidBasicApplication/MainActivity.cs" Line="6" Column="1" />
-      <File FileName="XamarinAndroidBasicApplication/Resources/values/Strings.xml" Line="5" Column="13" />
-      <File FileName="XamarinAndroidBasicApplication/Views/HelloAndroidMultiScreen/HelloAndroidMultiScreen.txt" Line="13" Column="1" />
-      <File FileName="XamarinAndroidBasicApplication/Views/HelloAndroidMultiScreen/TranslationHistoryActivity.cs" Line="23" Column="2" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

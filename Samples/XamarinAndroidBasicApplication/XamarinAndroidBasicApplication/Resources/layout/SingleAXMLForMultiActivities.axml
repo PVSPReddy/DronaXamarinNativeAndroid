@@ -9,15 +9,45 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/black"
         android:minWidth="25px"
         android:minHeight="25px">
-        <ImageView
-            android:src="@drawable/backwhite"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:id="@+id/ColorSetsImageBack" />
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <ImageView
+                    android:src="@drawable/backwhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/ColorSetsImageBack" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <ImageView
+                    android:src="@drawable/backwhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:rotation="180"
+                    android:id="@+id/ColorSetsImageNext" />
+            </LinearLayout>
+        </LinearLayout>
         <View
             android:layout_width="225.0dp"
             android:layout_height="225.0dp"

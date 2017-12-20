@@ -6,16 +6,16 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Graphics;
 
 namespace XamarinAndroidBasicApplication
 {
-    [Activity(Label = "GreenColorActivity")]
-    public class GreenColorActivity : Activity
+    [Activity(Label = "RedColorActivity")]
+    public class RedColorActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -42,7 +42,7 @@ namespace XamarinAndroidBasicApplication
             {
                 try
                 {
-                    var nextActivity = new Intent(this, typeof(YellowColorActivity));
+                    var nextActivity = new Intent(this, typeof(MainMenuActivity));
                     StartActivity(nextActivity);
                 }
                 catch (Exception ex)
@@ -52,7 +52,7 @@ namespace XamarinAndroidBasicApplication
             };
 
             View colorView = FindViewById<View>(Resource.Id.ColorSetsView);
-            colorView.SetBackgroundColor(Color.Green);
+            colorView.SetBackgroundColor(Color.Red);
 
 
             //greenColorView.SetBackgroundColor(Color.Violet);
@@ -64,8 +64,7 @@ namespace XamarinAndroidBasicApplication
             //greenColorView.SetBackgroundColor(Color.Red);
 
             TextView colorText = FindViewById<TextView>(Resource.Id.ColorSetsName);
-            colorText.Text = "Green Color";
-
+            colorText.Text = "Red Color";
         }
     }
 }
