@@ -78,8 +78,6 @@
     <None Include="Views\Preface.txt" />
     <None Include="Views\HelloAndroidMultiScreen\HelloAndroidMultiScreen.txt" />
     <None Include="Views\SingleAXMLWithMultipleActivities\SingleAXMLWithMultipleActivitiesText.txt" />
-    <None Include="Views\DrawerLayout\DrawerlayoutText.txt" />
-    <None Include="Views\EmptyTextFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -93,8 +91,6 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\backWhite.png" />
     <AndroidResource Include="Resources\drawable-mdpi\backWhite.png" />
     <AndroidResource Include="Resources\layout\SingleAXMLForMultiActivities.axml" />
-    <AndroidResource Include="Resources\layout\DrawerLayoutOneAXML.axml" />
-    <AndroidResource Include="Resources\DrawerLayoutMenu\DrawerLayoutOneMenu.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -108,10 +104,6 @@
     <Folder Include="Resources\drawable-mdpi\" />
     <Folder Include="Utilities\" />
     <Folder Include="Views\SingleAXMLWithMultipleActivities\" />
-    <Folder Include="Views\DrawerLayout\" />
-    <Folder Include="Views\DrawerLayout\DrawerLayoutOne\" />
-    <Folder Include="Views\DrawerLayout\DrawerLayoutTwo\" />
-    <Folder Include="Resources\DrawerLayoutMenu\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
