@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{4BD869E2-B495-495A-9B1E-2212A71BACB4}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DrawerLayout/MainActivity.cs">
+    <Files>
+      <File FileName="DrawerLayout/MainActivity.cs" Line="31" Column="88" />
+      <File FileName="DrawerLayout/Views/DrawerLayoutOne/DrawerLayoutMenuOneActivity.cs" Line="23" Column="79" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="44" column="1" />
-      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="57" column="1" />
-      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="56" column="1" />
-      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="58" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

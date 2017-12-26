@@ -92,8 +92,8 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\mipmap-xhdpi\MainActivity.cs" />
-    <Compile Include="Resources\mipmap-xxxhdpi\DrawerLayoutMenuOneActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Views\DrawerLayoutOne\DrawerLayoutMenuOneActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
