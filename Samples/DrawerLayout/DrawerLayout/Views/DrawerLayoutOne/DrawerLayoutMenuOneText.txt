@@ -1,0 +1,95 @@
+﻿This is a drawer Layout or Master Detail Page in Android.
+
+The packages has to be updated for this sample to 26.1.0.1 to use Drawer Layout.
+And also add Android.Support.Design package to use NavigationView.
+
+
+Now in the activity inherit Android.Support,V7.App.AppCompactActivity to access the method SetSupportActionBar(ToolBar);
+
+Precautions to be taken
+-----------------------
+
+to inherit AppCompactActivity you have to access a theme from Theme.AppCompat theme (or descendant) with this activity.
+in order to avoid "You need to use a Theme.AppCompat theme (or descendant) with this activity." error
+this has to be used in AXML and in Activity that used here
+in AXML
+-------
+<android.support.v7.widget.Toolbar
+        android:id="@+id/DrawerLayoutMenuOneToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#33B86C"
+        app:popupTheme="@style/MyTheme" />
+
+here i have created Styles.xml file in values folder in resources folder
+in this i declared my theme as
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>  
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style>  
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">  
+        <item name="colorPrimary">#2196F3</item>  
+        <item name="colorPrimaryDark">#1976D2</item>  
+    </style>
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item> 
+        <item name="colorPrimary">#16A085</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+    </style>
+    <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#F5F5F5</item>
+        <item name="spinBars">true</item>
+    </style> 
+</resources>
+
+And in Activity that inherits AppCompactActivity:
+---------------------------------------------------
+[Activity(Label = "DrawerLayout",Theme = "@style/MyTheme", MainLauncher = true)]
+
+
+add 
+xmlns:app="http://schemas.android.com/apk/res-auto"
+after 
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+in AXML file 
+like wise we are adding in XAML for accessing custom renders
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/DrawerLayoutMenuOneToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#33B86C"
+        app:popupTheme="@style/MyTheme" />
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:id="@+id/DrawerLayoutMenuOne">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <android.support.design.widget.NavigationView
+            android:id="@+id/DrawerLayoutMenuOneNavigationView"
+            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/menu" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+
+to avoid app is an undeclared prefix error
+
+
+  

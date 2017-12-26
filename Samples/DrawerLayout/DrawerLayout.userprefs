@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{4BD869E2-B495-495A-9B1E-2212A71BACB4}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="44" column="1" />
+      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="57" column="1" />
+      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="56" column="1" />
+      <Breakpoint file="/Users/rabbit/Projects/DrawerLayout/DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" relfile="DrawerLayout/Resources/mipmap-xhdpi/MainActivity.cs" line="58" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DrawerLayout PreferredExecutionTarget="Android.ZY222Z3P7X" />
+</Properties>

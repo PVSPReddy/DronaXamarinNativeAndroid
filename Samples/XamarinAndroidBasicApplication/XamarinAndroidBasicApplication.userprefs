@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{7BD150C3-51D2-4F3C-92E7-0D983ED039CE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="XamarinAndroidBasicApplication/Views/MainMenuActivity.cs">
     <Files>
-      <File FileName="XamarinAndroidBasicApplication/Views/MainMenuActivity.cs" Line="1" Column="1" />
+      <File FileName="XamarinAndroidBasicApplication/Views/MainMenuActivity.cs" Line="49" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
