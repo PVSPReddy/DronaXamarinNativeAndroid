@@ -1,0 +1,88 @@
+﻿Here we are creeating every component of drawer layout in different pages and we merge
+in the DrawerLayoutMenuOne we used single AXML and Activity to create a DrawerLayout.
+
+Create Colors.xml and Styles.xml and Strings.xml in Resources/values folder if not present and then
+
+add in Colors.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <color name="MenuOneWindowBackground">#8AA5B9</color>
+</resources>
+
+
+add in Styles.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="MenuTwoTheme" parent="MenuTwoThemeDesign">
+    </style>
+    <style name="MenuTwoThemeDesign" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#16A085</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="android:windowBackground">@color/MenuOneWindowBackground</item>
+    </style>
+</resources>
+
+add in Strings.xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DrawerLayout</string>
+    <string name="menu_two_drawer_open">Open</string>
+    <string name="menu_two_drawer_close">Close</string>
+</resources>
+
+now create menu items in menutwo.xml file in Resources/menu folder id folder is not present create one then
+add in menutwo.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:icon="@mipmap/HamBurgerWhite" android:title="Home" />
+        <item android:id="@+id/messages" android:icon="@drawable/HamBurgerWhite" android:title="Messages" />
+        <item android:id="@+id/friends" android:icon="@drawable/HamBurgerWhite" android:title="Friends" />
+        <item android:id="@+id/discussion" android:icon="@drawable/HamBurgerWhite" android:title="Discussion" />
+    </group>
+    <item android:title="Sub items">
+        <menu>
+            <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 1" />
+            <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 2" />
+        <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 5" /> </menu>
+    </item>
+</menu>
+
+
+
+now lets start working with layouts
+we divide the drawer layout into three parts
+ToolBar, DrawerLayout, Header
+
+for Header create DrawerLayoutMenuTwoHeaderAXML in Resources/layout folder
+add line
+
+xmlns:app="http://schemas.android.com/apk/res-auto" 
+after 
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="#0099ff"
+    android:padding="19dp"
+    android:gravity="bottom">
+    <TextView
+        android:text="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="MenuTwoHeaderUserNameText" />
+</LinearLayout>
+
+
+for ToolBAr create DrawerLayoutMenuTwoToolBarAXML in Resources/layout folder
+add line
+
+xmlns:app="http://schemas.android.com/apk/res-auto" 
+after 
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+

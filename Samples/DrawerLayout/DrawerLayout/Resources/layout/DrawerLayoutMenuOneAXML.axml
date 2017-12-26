@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="#33B86C"
-        app:popupTheme="@style/MyTheme" />
+        app:popupTheme="@style/MenuOneTheme" />
     <android.support.v4.widget.DrawerLayout
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"

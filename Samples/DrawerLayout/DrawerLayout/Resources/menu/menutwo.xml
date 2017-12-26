@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:icon="@mipmap/HamBurgerWhite" android:title="Home" />
+        <item android:id="@+id/messages" android:icon="@drawable/HamBurgerWhite" android:title="Messages" />
+        <item android:id="@+id/friends" android:icon="@drawable/HamBurgerWhite" android:title="Friends" />
+        <item android:id="@+id/discussion" android:icon="@drawable/HamBurgerWhite" android:title="Discussion" />
+    </group>
+    <item android:title="Sub items">
+        <menu>
+            <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 1" />
+            <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 2" />
+        <item android:icon="@drawable/HamBurgerWhite" android:title="Sub item 5" /> </menu>
+    </item>
+</menu>

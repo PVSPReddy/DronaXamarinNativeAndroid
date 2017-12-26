@@ -19,7 +19,7 @@ using SupportDesign = Android.Support.Design.Widget;
 
 namespace DrawerLayout.Views.DrawerLayoutOne
 {
-    [Activity(Label = "DrawerLayoutMenuOneActivity")]
+    [Activity(Label = "DrawerLayoutMenuOneActivity", Theme = "@style/MenuOneTheme")]
     public class DrawerLayoutMenuOneActivity : Android.Support.V7.App.AppCompatActivity//Activity//AppCompactActivity
     {
         protected SupportV4DrawerLayout.DrawerLayout drawerLayout;
@@ -30,6 +30,7 @@ namespace DrawerLayout.Views.DrawerLayoutOne
             base.OnCreate(savedInstanceState);
 
             // Create your application here
+            /*
             SetContentView(Resource.Id.DrawerLayoutMenuOne);
             drawerLayout = FindViewById<SupportV4DrawerLayout.DrawerLayout>(Resource.Id.DrawerLayoutMenuOne);
             navigationView = FindViewById<SupportDesign.NavigationView>(Resource.Id.DrawerLayoutMenuOneNavigationView);
@@ -40,27 +41,38 @@ namespace DrawerLayout.Views.DrawerLayoutOne
             SupportActionBar.SetDisplayShowTitleEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetHomeAsUpIndicator(Resource.Mipmap.HamBurgerWhite);
+            */
 
+            try
+            {
+                SetContentView(Resource.Layout.DrawerLayoutMenuOneAXML);
+                drawerLayout = FindViewById<SupportV4DrawerLayout.DrawerLayout>(Resource.Id.DrawerLayoutMenuOne);
+                navigationView = FindViewById<SupportDesign.NavigationView>(Resource.Id.DrawerLayoutMenuOneNavigationView);
+                var toolBar = FindViewById<SupportV7ToolBar.Toolbar>(Resource.Id.DrawerLayoutMenuOneToolBar);
 
-
-            //SetSupportActionBar(toolbar);  
-            //SupportActionBar.SetDisplayHomeAsUpEnabled(true);  
-            //SupportActionBar.SetDisplayShowTitleEnabled(false);  
-            //SupportActionBar.SetHomeButtonEnabled(true);  
-            //SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu); 
-
+                SetSupportActionBar(toolBar);
+                SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+                SupportActionBar.SetDisplayShowTitleEnabled(false);
+                SupportActionBar.SetHomeButtonEnabled(true);
+                SupportActionBar.SetHomeAsUpIndicator(Resource.Mipmap.HamBurgerWhite);
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.Message;
+                System.Console.Write(ex.StackTrace);
+            }
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             //return base.OnOptionsItemSelected(item);
-            switch (item.ItemId)   
-            {  
-                case Android.Resource.Id.Home:  
-                    drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);  
-                    return true;  
-            }  
-            return base.OnOptionsItemSelected(item); 
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
         }
     }
 }

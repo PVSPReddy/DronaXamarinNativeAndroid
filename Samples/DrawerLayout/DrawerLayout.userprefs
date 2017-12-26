@@ -1,8 +1,14 @@
 ﻿<Properties StartupConfiguration="{4BD869E2-B495-495A-9B1E-2212A71BACB4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DrawerLayout/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="DrawerLayout/MainActivity.cs" Line="31" Column="88" />
-      <File FileName="DrawerLayout/Views/DrawerLayoutOne/DrawerLayoutMenuOneActivity.cs" Line="23" Column="79" />
+      <File FileName="DrawerLayout/MainActivity.cs" Line="16" Column="2" />
+      <File FileName="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoActivity.cs" Line="12" Column="22" />
+      <File FileName="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoText.txt" Line="76" Column="45" />
+      <File FileName="DrawerLayout/Resources/values/Styles.xml" Line="7" Column="53" />
+      <File FileName="DrawerLayout/Resources/values/Colors.xml" Line="1" Column="1" />
+      <File FileName="DrawerLayout/Resources/values/Strings.xml" Line="1" Column="1" />
+      <File FileName="DrawerLayout/Resources/menu/menutwo.xml" Line="13" Column="32" />
+      <File FileName="DrawerLayout/Views/DrawerLayoutOne/DrawerLayoutMenuOneActivity.cs" Line="16" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,5 +17,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.DrawerLayout PreferredExecutionTarget="Android.ZY222Z3P7X" />
+  <MonoDevelop.Ide.ItemProperties.DrawerLayout AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ZY222Z3P7X" />
 </Properties>

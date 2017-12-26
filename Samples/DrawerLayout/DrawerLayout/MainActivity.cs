@@ -14,7 +14,7 @@ using DrawerLayout.Views.DrawerLayoutOne;
 
 namespace DrawerLayout
 {
-    [Activity(Label = "DrawerLayout",Theme = "@style/MyTheme", MainLauncher = true)]
+    [Activity(Label = "DrawerLayout", MainLauncher = true)]
     public class MainActivity : Activity
     {
         //protected SupportV4DrawerLayout.DrawerLayout drawerLayout;
