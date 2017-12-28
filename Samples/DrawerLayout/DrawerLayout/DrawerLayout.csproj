@@ -119,6 +119,7 @@
     <AndroidResource Include="Resources\menu\menutwo.xml" />
     <AndroidResource Include="Resources\layout\DrawerLayoutMenuTwoHeaderAXML.axml" />
     <AndroidResource Include="Resources\layout\DrawerLayoutMenuTwoToolBarAXML.axml" />
+    <AndroidResource Include="Resources\layout\DrawerLayoutMenuTwoAXML.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

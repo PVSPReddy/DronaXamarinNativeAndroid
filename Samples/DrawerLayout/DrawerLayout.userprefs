@@ -1,14 +1,7 @@
 ﻿<Properties StartupConfiguration="{4BD869E2-B495-495A-9B1E-2212A71BACB4}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoActivity.cs">
     <Files>
-      <File FileName="DrawerLayout/MainActivity.cs" Line="16" Column="2" />
-      <File FileName="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoActivity.cs" Line="12" Column="22" />
-      <File FileName="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoText.txt" Line="76" Column="45" />
-      <File FileName="DrawerLayout/Resources/values/Styles.xml" Line="7" Column="53" />
-      <File FileName="DrawerLayout/Resources/values/Colors.xml" Line="1" Column="1" />
-      <File FileName="DrawerLayout/Resources/values/Strings.xml" Line="1" Column="1" />
-      <File FileName="DrawerLayout/Resources/menu/menutwo.xml" Line="13" Column="32" />
-      <File FileName="DrawerLayout/Views/DrawerLayoutOne/DrawerLayoutMenuOneActivity.cs" Line="16" Column="53" />
+      <File FileName="DrawerLayout/Views/DrawerLayoutTwo/DrawerLayoutMenuTwoActivity.cs" Line="33" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

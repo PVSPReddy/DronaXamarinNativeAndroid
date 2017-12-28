@@ -86,3 +86,12 @@ after
 xmlns:android="http://schemas.android.com/apk/res/android"
 
 
+
+Now for DrawerLayout create DrawerLayoutMenuTwoAXML in Resources/layout folder
+add line
+
+xmlns:app="http://schemas.android.com/apk/res-auto" 
+after 
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+

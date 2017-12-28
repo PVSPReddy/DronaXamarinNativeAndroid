@@ -10,6 +10,7 @@ using SupportDesign = Android.Support.Design.Widget;
 using Android.Views;
 using System;
 using DrawerLayout.Views.DrawerLayoutOne;
+using DrawerLayout.Views.DrawerLayoutTwo;
 //using Android.Support;
 
 namespace DrawerLayout
@@ -26,7 +27,9 @@ namespace DrawerLayout
 
             try
             {
-                var drawerIntent = new Intent(this, typeof(DrawerLayoutMenuOneActivity));
+                //var drawerIntent = new Intent(this, typeof(DrawerLayoutMenuOneActivity));
+
+                var drawerIntent = new Intent(this, typeof(DrawerLayoutMenuTwoActivity));
                 StartActivity(drawerIntent);
             }
             catch(Exception ex)

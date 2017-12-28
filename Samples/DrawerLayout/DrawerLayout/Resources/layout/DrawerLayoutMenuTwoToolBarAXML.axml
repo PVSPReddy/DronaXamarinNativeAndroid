@@ -3,8 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:id="@+id/MenuTwoToolBarLayout">
+    android:id="@+id/MenuTwoToolBarLayout"
+    android:theme="@style/MenuTwoTheme">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/MenuTwoAppBarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:background="?android:attr/colorPrimary"
+            android:id="@+id/MenuTwoToolBar" />
+    </android.support.design.widget.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>
