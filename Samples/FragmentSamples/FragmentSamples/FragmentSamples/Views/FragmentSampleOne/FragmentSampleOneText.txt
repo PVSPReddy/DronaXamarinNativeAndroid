@@ -1,0 +1,123 @@
+﻿Here we are now working with fragments
+
+
+Fragments can be simply defined as piece of code, which can hold UI and logic in them similar to an activity
+which can be used by the activities, by this the code is shared among fragments so teh preformance will be increased and the time
+taking to load will be very less when compared to load an activity
+
+An activity can hold any number of fragments
+and every fragment can be used by any number of activities.
+
+
+
+here there is another use for a fragment when we are using similar app in both tabs and mobile devices
+In mobile menu is in one activity and its details is kept in another activity
+when comes to tablet, both of them have to be shown in single activity side by side
+
+so if we have toachieve this we have to create differently fo bothe the devices
+but by using fragments we can simply use two fragments with menu in one and details in another
+then 
+if the device is mobile we show them in different times(onclick)
+and in tabs we can simply show them at same time.
+
+
+here i have created another layout folder "layout-large" in resource folder
+layout folder is for mobiles and 
+layout-large if for tablets
+
+created same file in both the folders
+"FragmentSampleOneAXML.axml"
+
+add this line for fragment after "<fragment"
+class="com.xamarin.sample.fragments.supportlib.TitlesFragment"
+
+
+and also created fragments with same name
+titlesFragmentOne
+
+but in layout-large->FragmentSampleOneAXML.axml
+we created another extra layout to hold the details also
+
+Note
+Note
+******************
+while creating fragment in layout you have to create a Fragment class in cs files (how to create is described below)
+this has to be referenced in the layout that you created as like this
+
+<fragment
+        class="FragmentSamples.Views.FragmentSampleOne.TitlesFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/titlesFragmentOne" />
+
+or as
+
+<fragment
+        android:name="FragmentSamples.Views.FragmentSampleOne.TitlesFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/titlesFragmentOne" />
+
+using class attribute or android:name attribute
+
+here you are refering the TitlesFragment class which is inheriting Android.App.Fragment similar to some classes inheriting Activity
+
+here to refer this we have to use the namespace and the folder structure of the class
+
+FragmentSamples:    is my app name or  namespace of the project
+Views:              In this application root I created a folder for Views
+FragmentSampleOne:  In Views folder i have created another folder called FragmentSampleOne folder
+TitlesFragment:     In FragmentSampleOne folder I created a class(TitlesFragment) file that inherits Android.App.Fragment class
+
+this is why i gave the class value in fragment as "FragmentSamples.Views.FragmentSampleOne.TitlesFragment"
+
+*******************
+
+
+now we have to create a fragment 
+select folder then right click select on add file, now select/create fragment with name "TitlesFragment"
+click ok.
+
+now this class inherits the Fragment class ,
+change that to Android.App.ListFragment.
+
+also create an activity to hold these fragments
+create FragmentSampleOneActivity.cs
+
+
+
+
+
+For Tablet
+
+We create 
+    a) TitlesFragment.cs , this inherits Android.App.ListFragment Class
+    b) DetailsFragment.cs , this inherits Android.App.Fragment Class
+    c) FragmentSampleOneAXML.axml layout
+    e) FragmentSampleOneActivity.cs, this inherits Activity
+    d) Shakespear.cs , this contains data to populate the DetailsFragment.cs
+
+here Titlesfragment.cs is a fragment that holds the list data
+on selecting a value if has a previous DetailsFragment it removes and creates a new one else it directly creates a new one
+on another value selection it does the same process
+fragmentSampleOneAXML.axml is a ui component that has a fragment and a framelayout this framelayout is the details layout which later acts as a fragment in DetailsFragment.cs
+FragmentSampleOneActivity.cs is the activity that holds both Fragments in single screen
+
+
+
+For Mobiles
+
+We create 
+    a) TitlesFragment.cs , this inherits Android.App.ListFragment Class
+    b) DetailsFragment.cs , this inherits Android.App.Fragment Class
+    c) FragmentSampleOneAXML.axml layout
+    d) FragmentSampleOneActivity.cs, this inherits Activity
+    e) DetailsActivity.cs, this inherits Activity
+    f) Shakespear.cs , this contains data to populate the DetailsFragment.cs
+
+here Titlesfragment.cs is a fragment that holds the list data
+on selecting a value if has a previous DetailsFragment it removes and creates a new one else it directly creates a new one
+on another value selection it does the same process
+fragmentSampleOneAXML.axml is a ui component that has a fragment and a framelayout this framelayout is the details layout which later acts as a fragment in DetailsFragment.cs
+FragmentSampleOneActivity.cs is the activity that holds items list Fragment
+ DetailsActivity.cs is another activity that holds detais with/with-out any fragment
