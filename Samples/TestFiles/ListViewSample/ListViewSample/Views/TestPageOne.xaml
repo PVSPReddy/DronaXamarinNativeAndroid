@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:ListViewSample;assembly=ListViewSample"
+    x:Class="ListViewSample.Views.TestPageOne">
+    
+	<ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,0.1" AbsoluteLayout.LayoutFlags="All">
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="1,1,1,0.9" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <local:CustomViewWithList HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    </local:CustomViewWithList>
+                </StackLayout>
+                <Button x:Name="btnNext" Text="Next" HorizontalOptions="FillAndExpand" VerticalOptions="End" Clicked="NextButtonClicked">
+                </Button>
+            </StackLayout>
+            
+        </AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

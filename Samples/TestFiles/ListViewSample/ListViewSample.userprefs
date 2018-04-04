@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{84AE7A44-866E-4DAF-AC7A-D99FDADDBB0B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/CustomControls/CustomViewCarouselAdapter.cs">
+    <Files>
+      <File FileName="Droid/CustomControls/CustomViewWithListRender.cs" Line="304" Column="17" />
+      <File FileName="Droid/CustomControls/CustomViewCarouselRender.cs" Line="40" Column="9" />
+      <File FileName="Droid/CustomControls/CustomViewCarouselAdapter.cs" Line="297" Column="16" />
+      <File FileName="ListViewSample/CustomControls/CustomViewCarousel.cs" Line="7" Column="36" />
+      <File FileName="ListViewSample/Views/TestPageTwo.xaml" Line="17" Column="47" />
+      <File FileName="ListViewSample/Views/TestPageTwo.xaml.cs" Line="1" Column="1" />
+      <File FileName="ListViewSample/Views/TestPageOne.xaml" Line="21" Column="27" />
+      <File FileName="ListViewSample/Views/TestPageOne.xaml.cs" Line="12" Column="35" />
+      <File FileName="ListViewSample/App.xaml.cs" Line="9" Column="21" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ListViewSample.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ZY222Z3P7X" />
+  <MonoDevelop.Ide.ItemProperties.ListViewSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0EC9017F-1467-48BE-B0B8-04F6068667F2">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.ListViewSample.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
